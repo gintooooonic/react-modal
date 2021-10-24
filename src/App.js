@@ -20,7 +20,7 @@ function App() {
         </p>
       </header>
       <Modal
-        title="react-modal"
+        title="React Modal"
         x="100"
         y="100"
         width="500"
@@ -29,7 +29,9 @@ function App() {
         onClose={closeModal}
       >
         <h1>Demo</h1>
-        <p>Move or resize this modal!</p>
+        <p>
+          Move or <del>resize</del> this modal!
+        </p>
       </Modal>
     </div>
   );
