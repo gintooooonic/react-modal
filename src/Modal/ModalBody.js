@@ -6,6 +6,6 @@ export default function ModalBody(props) {
 
 const ModalBodyDiv = styled.div`
   box-sizing: border-box;
-  padding-top: 30px;
+  padding-top: 32px;
   height: 100%;
 `;

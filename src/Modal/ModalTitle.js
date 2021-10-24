@@ -14,7 +14,7 @@ const ModalTitleDiv = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  height: 30px;
+  height: 32px;
   border-radius: 10px 10px 0 0;
   & > p {
     margin: 0;
@@ -22,15 +22,15 @@ const ModalTitleDiv = styled.div`
     font-size: 15px;
     font-weight: bold;
   }
+  &:hover {
+    background-color: #e6e6e6;
+  }
   & * {
     -ms-user-select: none;
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-  }
-  &:hover {
-    background-color: #e6e6e6;
   }
 `;
 

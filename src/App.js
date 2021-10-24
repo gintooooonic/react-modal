@@ -23,6 +23,8 @@ function App() {
         title="react-modal"
         x="100"
         y="100"
+        width="500"
+        height="400"
         display={modalState}
         onClose={closeModal}
       >
