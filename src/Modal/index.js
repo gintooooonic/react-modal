@@ -56,9 +56,4 @@ const ModalDiv = styled.div`
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 4px 20px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  padding: 1px;
-  &:hover::after {
-    content: "";
-    cursor: nwse-resize;
-  }
 `;
