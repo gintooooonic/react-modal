@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default function ModalTitle(props) {
   return (
-    <ModalTitleDiv onMouseDown={props.onMouseDown} onMouseUp={props.onMouseUp}>
+    <ModalTitleDiv onMouseDown={props.onMouseDown}>
       <CloseButton onClick={props.onClose} />
       <p>{props.title}</p>
     </ModalTitleDiv>

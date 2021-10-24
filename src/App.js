@@ -1,16 +1,12 @@
+import { useState } from "react";
+import Modal from "./Modal";
 import logo from "./logo.svg";
 import "./App.css";
-import Modal from "./Modal";
-import { useState } from "react";
 
 function App() {
-  const [isModalOn, setIsModalOn] = useState(false);
-  const openModal = () => {
-    setIsModalOn(true);
-  };
-  const closeModal = () => {
-    setIsModalOn(false);
-  };
+  const [modalState, setModalState] = useState(false);
+  const openModal = () => setModalState(true);
+  const closeModal = () => setModalState(false);
 
   return (
     <div className="App">
@@ -23,7 +19,13 @@ function App() {
           Open Modal
         </p>
       </header>
-      <Modal title="react-modal" display={isModalOn} onClose={closeModal}>
+      <Modal
+        title="react-modal"
+        x="100"
+        y="100"
+        display={modalState}
+        onClose={closeModal}
+      >
         <h1>Demo</h1>
         <p>Move or resize this modal!</p>
       </Modal>
