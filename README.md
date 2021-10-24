@@ -1,3 +1,3 @@
 # react-modal
 
-![.](screenrecord.gif)
+![.](screenshot.gif)
