@@ -42,7 +42,6 @@ const CloseButton = styled.div`
   height: 15px;
   border-radius: 50%;
   background-color: #ff5f57;
-
   &:hover {
     background-color: #ff3d33;
   }
