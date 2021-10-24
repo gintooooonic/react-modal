@@ -1,7 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Modal from "./Modal";
+import { useState } from "react";
 
 function App() {
+  const [isModalOn, setIsModalOn] = useState(false);
+  const openModal = () => {
+    setIsModalOn(true);
+  };
+  const closeModal = () => {
+    setIsModalOn(false);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -9,15 +19,14 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p className="App-link" onClick={openModal}>
+          Open Modal
+        </p>
       </header>
+      <Modal title="react-modal" display={isModalOn} onClose={closeModal}>
+        <h1>Demo</h1>
+        <p>Move or resize this modal!</p>
+      </Modal>
     </div>
   );
 }
